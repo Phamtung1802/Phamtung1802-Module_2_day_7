@@ -3,6 +3,7 @@ package circleComparator;
 public class Circle {
     double Radius;
     String Color;
+    Boolean filled;
     public Circle(){
 
     }
@@ -12,9 +13,13 @@ public class Circle {
     }
 
     public Circle(double v, String indigo, boolean b) {
+        this.Radius=v;
+        this.Color=indigo;
+        this.filled=b;
     }
 
     public Circle(double v) {
+        this.Radius=v;
     }
 
     public double getRadius() {
